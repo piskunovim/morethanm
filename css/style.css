@@ -108,5 +108,130 @@ h1 {
   text-align: center;
 }
 
-/* Turbo block */
+/* Turbo Block */
 
+.turbo-block a {
+  margin: 0 15px;
+}
+
+/* About Us Block  */
+
+.about-us-block{
+  height: 750px;
+  background: url(../images/about_us_block_bg.png) no-repeat center center;
+}
+
+.about-us-ksenia li{
+  list-style-image: url(../images/about_us_block_ul_ksenia.png);
+}
+
+.about-us-ksenia-title{
+  font-family: RupsterScriptFree;
+  font-size: 36px;
+  background: url(../images/about_us_block_ksenia.png) no-repeat center center;
+  background-size: cover;
+  line-height: 80px;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.about-us-mila li{
+  list-style-image: url(../images/about_us_block_ul_mila.png);
+}
+
+.about-us-mila-title{
+  font-family: RupsterScriptFree;
+  font-size: 36px;
+  background: url(../images/about_us_block_mila.png) no-repeat center center;
+  background-size: cover;
+  line-height: 80px;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* Meet Us */
+.meet-us-block-title{
+  margin: 48px 0 0;    
+}
+
+.meet-us-block-subtitle{
+  margin: 0 0 48px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.meet-us-content{
+  width: 75%;
+  margin: auto;
+}
+
+.meet-us-thumbnail{
+  position: relative;
+  margin: 0 15px;
+}
+
+.meet-us-thumbnail-content{
+  position: absolute;
+  top: 105px;
+  left: 45px;
+  font-family: RupsterScriptFree;
+  font-size: 48px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* How That Goes */
+
+.how-that-goes-content{
+  position: relative;
+}
+
+.how-that-goes-prev{
+  position: absolute;
+  height:45px;
+  top: 137px;
+  left: -65px;
+}
+
+.how-that-goes-next{
+  position: absolute;
+  height: 45px;
+  top: 137px;
+  right: -65px;
+}
+
+/* Contact Us */
+
+.contact-us-block{
+  height: 449px;
+  background: url(../images/contact_us_block_bg.png) no-repeat center center;
+}
+
+.contact-us-block-title{
+  font-weight: 600;
+  padding: 55px 0 0;
+}
+
+.contact-us-block-content{
+  margin: 56px 0;
+}
+
+.name{
+  line-height: 34px;
+  font-size: 24px; 
+  font-weight: 600;
+  color: #081D3C;
+}
+
+.phone{
+  line-height: 26px;
+  font-size: 18px;
+  color: #081D3C;
+}
+
+.social img{
+  width: 28px;
+}
