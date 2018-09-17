@@ -22,27 +22,27 @@
           
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active" href="#">О нас</a>
+              <a class="nav-link active" href="#about-us">О нас</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Маркетинг</a>
+              <a class="nav-link" href="#" onclick="showMarketingContent();">Маркетинг</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">PR</a>
+              <a class="nav-link" href="#" onclick="showPrContent();">PR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Event</a>
+              <a class="nav-link" href="#" onclick="showEventContent();">Event</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">События</a>
+              <a class="nav-link" href="#how-that-goes">События</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#contact-us">Контакты</a>
             </li>
           </ul>
         
         <div class="main-block-logo text-center">
-          <img src="images/main_block_logo.svg" class="img-fluid" alt="Больше чем маркетинг">
+          <img src="images/main_block_logo.svg"  alt="Больше чем маркетинг">
         </div>
 
         <div class="main-block-text text-center">
@@ -61,19 +61,19 @@
         <h1>Придадим турбоускорение вашему бизнесу!</h1>
       </div>
       <div class="text-center">
-          <a href="#"><img src="images/turbo_marketing.png" alt="Маркетинг"></a>
-          <a href="#"><img src="images/turbo_pr.png" alt="PR"></a>
-          <a href="#"><img src="images/turbo_event.png" alt="Event"></a>
+          <a href="#!" onclick="showMarketingContent();"><img class="img-fluid" src="images/turbo_marketing.png" alt="Маркетинг"></a>
+          <a href="#!" onclick="showPrContent();"><img class="img-fluid" src="images/turbo_pr.png" alt="PR"></a>
+          <a href="#!" onclick="showEventContent();"><img class="img-fluid" src="images/turbo_event.png" alt="Event"></a>
       </div>
     </div>
 
     <!-- About us -->
-    <div class="container-fluid about-us-block">
+    <div class="container-fluid about-us-block" id="about-us">
       <div class="text-center">
         <h1>О нас</h1>
       </div>
       <div class="row">
-          <div class="col-md-3 offset-md-1 about-us-ksenia">
+          <div class="col offset-md-1 about-us">
               <h2 class="about-us-ksenia-title">Ксения Федченко</h2>
               <ul>
                   <li>Бизнес-леди, создательница первого путешествия в новом формате  «JumpIn»</li>
@@ -83,7 +83,8 @@
                   <li>Работает с такими компаниями как МТС, сеть студий Ирины Сокериной, сочное кафе «Гранат» и другие</li>
               </ul>
           </div>
-          <div class="col-md-3 offset-md-4 about-us-mila">
+          <div class="col about-us-block-middle"></div>
+          <div class="col about-us-mila">
               <h2 class="about-us-mila-title">Мила Карагичева</h2>
               <ul>
                   <li>Бизнес-леди, совладелица креативного агенства «#БольшеЧем Маркетинг», турагенства, бизнес-консультант, психолог;</li>
@@ -92,6 +93,11 @@
                   <li>6 лет работы в сфере HR в крупных компаниях, таких как «Евросеть», «Кубань кредит», «Тандер»;</li>
                   <li>Эксперт по внедрению систем лояльности в сфере общепита и магазинов одежды.</li>
               </ul>
+          </div>
+      </div>
+      <div class="row about-us-block-footer">
+          <div class="col">
+              <img class="img-fluid" src="images/about_us_block_bg.png" alt="About us">
           </div>
       </div>
     </div>
@@ -110,7 +116,7 @@
                 </div>
           </div>
           <div class="meet-us-thumbnail">
-                <img src="images/meet_us_block_tmp.png" alt="Больше чем утро" />
+                <img src="images/meet_us_block_tmp.png"  alt="Больше чем утро" />
                 <div class="meet-us-thumbnail-content">
                     Турботренинг<br>
     «Топливо для<br> бизнеса»
@@ -126,7 +132,7 @@
     </div>
 
     <!-- How that goes -->
-    <div class="container how-that-goes-block">
+    <div class="container how-that-goes-block" id="how-that-goes">
       <div class="text-center">
         <h1>Как все проходит?</h1>
       </div>
@@ -145,7 +151,7 @@
     </div>
     
     <!-- Contact us -->
-    <div class="container-fluid block contact-us-block">
+    <div class="container-fluid block contact-us-block" id="contact-us">
       <div class="text-center">
         <h1 class="contact-us-block-title">Связаться с нами</h1>
       </div>
@@ -159,7 +165,7 @@
                        <div class="social"><img src="images/instagram.png" alt="Instagram"> summer_kseni</div>
                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 contact-us-block-logo">
                     <div class="text-center">
                         <img src="images/main_block_logo.svg" class="img-fluid" alt="Больше чем маркетинг">
                     </div>
@@ -180,6 +186,145 @@
       </div>
     </div>
 
+   <button id="btnToTop" title="Вернуться наверх">Наверх</button>
+   
+    <!-- Modals -->
+    <div class="modal fade" id="marketingModal" tabindex="-1" role="dialog" aria-labelledby="marketingModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="marketingModalLabel">Маркетинг</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+<h4>Привлекаем клиентов, поднимаем продажи, продвигаем с драйвом.</h4>
+<br>
+<p>Услуги:</p>
+
+<p><strong>1. Создаем маркетинговые концепции для вашего бизнеса</strong></p>
+<p>Для кого: <br>
+•	для стартапов, перед открытием компании<br>
+•	владельцев малого и среднего бизнеса, которые хотят развивать компанию с помощью профессионалов<br>
+•	владельцев малого и среднего бизнеса, которые хотят перевести предприятие новый уровень</p>
+
+<p>При заказе маркетинг-проекта вы получаете готовый план по переводу вашей компании на новый уровень доходов!</p>
+
+<p>В проект входит: всесторонний анализ текущего состояния компании, маркетинговая стратегия компании (позиционирование, ЦА, УТП и т.д.), маркетинг-план (пошаговая упаковка предыдущего пункта на современном языке:))  и продвижение, т.е. реализация маркетинг-плана (  SMM, реклама, event и тд). Все взаимосвязано и логично, ведь продвижение без базового пути - “деньги на ветер” и неоправданные ожидания(. Комплексный маркетинг-проект - самый популярный наш продукт!</p>
+ 
+<p><strong>2. Организуем спецпроекты (антикризисный маркетинг)</strong></p>
+<p>Для кого:<br>
+•	Компаний малого и среднего бизнеса;<br>
+•	Для тех, кому необходим быстрый результат (повышение среднего чека, приток клиентов, возврат ушедших клиентов и так далее, выйти на новую целевую аудиторию).</p>
+
+<p>Что входит в услугу: анализ текущей ситуации, разработка нескольких вариантов решения задачи, реализация одного или нескольких вариантов.</p>
+
+<p><strong>3. Аутсорсинг маркетинга</strong></p>
+<p>Для владельцев малого и среднего бизнеса, которые хотят:<br>
+•	оптимизировать постоянные затраты на штат маркетологов;<br>
+•	получить максимальный и профессиональный результат под задачи бизнеса;<br>
+•	сделать все  в короткие сроки.</p>
+<p>Для Вас подойдет  аутсорсинг маркетинга в компании, где наша команда за Вас гарантированно будет решать вопросы с привлечением клиентов, их удержанием, рекламой, соц.сетями и прочими современными маркетинговыми инструментами развития продаж. Пакет не дешевый, но один из самых эффективных для Вашего бизнеса!</p>
+
+<p><strong>4. Создание  HR-бренда</strong></p>
+<p>Для тех, кто хочет комплексного продвижения и формирование сильного многостороннего бренда.</p>
+
+<p>Инструменты маркетинга давно используются в HR, а подбор персонала или тимбилдинг может стать крутой рекламной кампанией.</p>
+<p>Давайте вместе это сделаем!</p>
+<p>Устроим шоу-рекрутмент, яркий флешмоб для сплочения сотрудников, продумаем концепцию HR-бренда и организуем поток сотрудников и клиентов одной акцией.</p>
+<p><strong>Хотите, чтобы о вас говорили и к вам стремились на работу? Звоните.</strong></p>            
+          </div>
+          <div class="modal-footer text-center">
+               <div class="col-md-12">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Понятно!</button>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="modal fade" id="prModal" tabindex="-1" role="dialog" aria-labelledby="prModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="prModalLabel">PR</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+<h4>Все, чтобы о вас говорили.</h4>
+<br>
+<p>Наши услуги:</p>
+
+<p><strong>1. Организация PR-кампаний</strong></p>
+<p>Для кого:<br> 
+•	Владельцы малого и среднего бизнеса<br>
+•	Специалисты по маркетингу и PR крупных компаний</p> 
+
+<p>Мы создадим необычные информационные поводы, привлечем СМИ на мероприятие и сделаем так, чтобы о вас говорили!</p> 
+<p>Что это может быть: вирусный ролик (мы запустили вирус, который показали на России 24 бесплатно), мероприятие для СМИ (с привлечением СМИ и контролем последующих публикаций), масштабное мероприятие, о котором будет говорить весь город.</p>
+
+<p><strong>2. Создание личного бренда</strong></p>
+<p>Для руководителей, которые готовы быть лицом компании.</p>
+
+<p>70% продаж компании может быть сделано за счет личного бренда руководителя.</p>
+<p>Вместе с вами мы продумаем вашу персональную маркетинговую стратегию, проработаем фишки бренда и укрепим ваш авторитет в профессиональном сообществе, организуем ваше выступление на целевых мероприятиях в РФ.
+Все инструменты маркетинга и PR но для вас лично.</p>
+
+<p><strong>3. Формирование сообществ предпринимателей и маркетологов</strong></p>
+<p>Мы понимаем ценность нового тренда - нетворкинга, т.е. каждого нового знакомства! Поэтому мы создали место, где каждый может заявить о себе, регулярно делиться и получать полезную информации для развития своего дела.</p>
+<p><strong>Тренды в бизнесе, маркетинге, бизнес-игры - это то, чем мы наполняем наши встречи с клиент с предпринимателями. Хотите к нам? Следите за анонсами в наших аккаунтах и будем вас ждать!</strong></p>
+     
+          </div>
+          <div class="modal-footer text-center">
+               <div class="col-md-12">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Понятно!</button>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="eventModalLabel">Event</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+<h4>Мероприятия “под ключ”.</h4> 
+<br> 
+<p>Для кого:<br>
+•	владельцев малого и среднего бизнеса<br>
+•	маркетологов крупных компаний<br>
+•	управляющих<br>
+•	администраторов.</p>  
+
+<p>Мы создадим эффектное и запоминающееся для ваших клиентов мероприятие по целям и задачам бизнеса.</p> 
+     
+<p>Зарекомендовавшие себя спикеры и локации буквально влюбят клиентов в  Ваш бренд)). Это может быть любой формат по согласованию с Вами: Бизнес-завтраки (полдники/ужины), бизнес-игры, квесты, конференции, выездные VIP мероприятия и т.д.</p>
+<p><strong>Эффект мероприятий: привлечения новой целевой аудитории (трафик), повышение лояльности к Вашему бренду , PR и, как следствие,  рост продаж в Вашей компании.</strong></p>
+
+     
+          </div>
+          <div class="modal-footer text-center">
+               <div class="col-md-12">
+                <button type="button" class="btn btn-info" data-dismiss="modal">Понятно!</button>
+               </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -198,8 +343,76 @@
               arrows: true,
               infinite: true,
               prevArrow: $('.how-that-goes-prev'),
-              nextArrow: $('.how-that-goes-next')
+              nextArrow: $('.how-that-goes-next'),
+              variableWidth: true,
+              responsive: [
+                {
+                  breakpoint: 1320,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 1000,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 500,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    prevArrow: false,
+                    nextArrow: false
+                  }
+                }
+              ]
           });
+        });
+        
+        function showMarketingContent(){
+            $('#marketingModal').modal('show');
+        }
+        
+        function showPrContent(){
+            $('#prModal').modal('show');
+        }
+        
+        function showEventContent(){
+            $('#eventModal').modal('show');
+        }
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("btnToTop").style.display = "block";
+            } else {
+                document.getElementById("btnToTop").style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            $('html, body').animate({
+                scrollTop: "0px"
+            }, 800);
+        }
+        
+        $('#btnToTop').click(function(){
+            topFunction();
+        });
+    
+        window.onscroll = function() {
+            scrollFunction()
+        };
+        
+        $('a[href^="#"].nav-link').click(function(){
+            var target = $(this).attr('href');
+            $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+            return false;
         });
     </script>
   </body>

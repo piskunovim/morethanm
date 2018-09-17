@@ -36,6 +36,7 @@ h1 {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  min-height: 750px;
 }
 
 .main-block ul{
@@ -117,8 +118,12 @@ h1 {
 /* About Us Block  */
 
 .about-us-block{
-  height: 750px;
+  min-height: 750px;
   background: url(../images/about_us_block_bg.png) no-repeat center center;
+}
+
+.about-us-block-footer{
+  display: none;
 }
 
 .about-us-ksenia li{
@@ -170,7 +175,7 @@ h1 {
 
 .meet-us-thumbnail{
   position: relative;
-  margin: 0 15px;
+  margin: 15px 15px;
 }
 
 .meet-us-thumbnail-content{
@@ -219,6 +224,10 @@ h1 {
   margin: 56px 0;
 }
 
+.contact-us-block-logo{
+    display: block;
+}
+
 .name{
   line-height: 34px;
   font-size: 24px; 
@@ -234,4 +243,103 @@ h1 {
 
 .social img{
   width: 28px;
+}
+
+/* Button to top */
+
+#btnToTop{
+    display: none;
+    position: fixed;
+    font-weight: 300;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    border-image: linear-gradient(180deg, #3CA1BC 0%, #175768 49%, #092544 100%);
+    background: linear-gradient(180deg, #3CA1BC 0%, #175768 49%, #092544 100%);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* Slick */
+.slick-slide{
+  margin: 0 15px;
+  width: 300px;
+}
+
+/* Bootstrap changes */
+
+@media (max-width: 1345px){
+    .about-us-block{
+        min-height: 350px;
+        background: none;
+    }
+    
+    .about-us-block-middle{
+        display: none;
+    }
+    
+    .about-us-block-footer{
+        display: block;
+    }
+}
+
+@media (max-width: 830px){
+    
+    .main-block-logo{
+        margin: 35px auto;
+    }
+    
+    .main-block-logo img{
+        text-align: left;
+        width: 333px;
+    }
+    
+    .meet-us-thumbnail img{
+        width: 230px;
+        margin: 10px 0;
+    }
+    
+    .meet-us-thumbnail-content{
+        font-size: 26px;
+    }
+    
+    .contact-us-block-content{
+        margin: 10px 0;
+    }
+    
+    .contact-us-block-title{
+        padding: 10px 0;
+        margin: 48px 0 0;
+    }
+    
+    .contact-us-block-logo{
+        display: none;
+    }
+    
+    .name{
+        margin: 10px 0;
+    }
+    
+    /* Arrow right (slick) */
+    .how-that-goes-next{
+        display: none;
+    }
+    
+    /* Arrow left (slick) */
+    .how-that-goes-prev{
+        display: none;
+    }
+    
+}
+
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 750px;
+        margin: 1.75rem auto;
+    }
 }
